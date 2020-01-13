@@ -1,0 +1,8 @@
+C:\Users\Xputer\Desktop\C#-Azure-DevOps\PrimeService\bin\Debug\netstandard2.0\PrimeService.deps.json
+C:\Users\Xputer\Desktop\C#-Azure-DevOps\PrimeService\bin\Debug\netstandard2.0\PrimeService.dll
+C:\Users\Xputer\Desktop\C#-Azure-DevOps\PrimeService\bin\Debug\netstandard2.0\PrimeService.pdb
+C:\Users\Xputer\Desktop\C#-Azure-DevOps\PrimeService\obj\Debug\netstandard2.0\PrimeService.csprojAssemblyReference.cache
+C:\Users\Xputer\Desktop\C#-Azure-DevOps\PrimeService\obj\Debug\netstandard2.0\PrimeService.AssemblyInfoInputs.cache
+C:\Users\Xputer\Desktop\C#-Azure-DevOps\PrimeService\obj\Debug\netstandard2.0\PrimeService.AssemblyInfo.cs
+C:\Users\Xputer\Desktop\C#-Azure-DevOps\PrimeService\obj\Debug\netstandard2.0\PrimeService.dll
+C:\Users\Xputer\Desktop\C#-Azure-DevOps\PrimeService\obj\Debug\netstandard2.0\PrimeService.pdb
