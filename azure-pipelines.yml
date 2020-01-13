@@ -9,6 +9,11 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
 steps:
 - task: UseDotNet@2
   displayName: 'Install .NET Core SDK'
@@ -18,24 +23,9 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: restore
+    command: 'build'
     projects: '**/*.csproj'
-    feedsToUse: config
-    nugetConfigPath: NuGet.config    # Relative to root of the repository
-    externalFeedCredentials: <Name of the NuGet service connection>
-
-- task: NuGetCommand@2
-  inputs:
-    command: pack
-    packagesToPack: '**/*.csproj'
-
-- task: DotNetCoreCLI@2
-  displayName: Build
-  inputs:
-    command: build
-    projects: '**/*.csproj'
-    arguments: '--configuration Release' # Update this to match your need
-
+    
 - task: DotNetCoreCLI@2
   inputs:
     command: test
