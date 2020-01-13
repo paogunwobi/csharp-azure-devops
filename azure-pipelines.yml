@@ -14,18 +14,20 @@ variables:
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
-steps:
-- task: UseDotNet@2
-  displayName: 'Install .NET Core SDK'
-  inputs:
-    version: 3.0.x
-    performMultiLevelLookup: true
+jobs:
+- job: 'ParallelTesting'
+  pool:
+    name: Hosted Ubuntu 1604
+  strategy:
+    parallel: 5
+  displayName: Run tests in parallel
 
+steps:
 - task: DotNetCoreCLI@2
+  displayName: Build
   inputs:
-    command: 'build'
+    command: build
     projects: '**/*.csproj'
-    
 - task: DotNetCoreCLI@2
   inputs:
     command: test
