@@ -37,5 +37,7 @@ steps:
   inputs:
     testSelector: 'testAssemblies'
     testAssemblyVer2: |
-      **\PrimeService.Tests.dll
+      **\PrimeService.Tests\bin\Debug\netcoreapp3.1\PrimeService.Tests.dll
+      !**\NUnit3.TestAdapter.dll
+      !**\obj\**
     searchFolder: '$(System.DefaultWorkingDirectory)'
